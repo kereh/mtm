@@ -1,8 +1,9 @@
-import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { jetbrain } from '@/lib/fonts'
+import { cn } from '@/lib/utils'
+import ThemeProvider from '@/components/theme-provider'
+import Header from '@/components/headers/header'
+import '@/styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +16,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={cn("--font-jetbrain", jetbrain.variable)}>
+        <ThemeProvider defaultTheme='system' attribute='class' enableSystem>
+          <div className="relative flex flex-col min-h-screen w-full">
+            <Header />
+            <div className="flex-1">
+              {children}
+            </div>
+          </div>
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
