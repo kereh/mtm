@@ -1,15 +1,23 @@
+import { icons } from "@/components/icons"
 import Brand from "@/components/headers/brand"
 import Desktop from "@/components/headers/menu/desktop"
-import ThemeSwitcher from "@/components/theme-switcher"
+// import ThemeSwitcher from "@/components/theme-switcher"
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full border-b py-4 px-10 flex flex-row items-center justify-between backdrop-blur">
+    <header className="fixed z-20 top-0 left-0 w-full py-4 px-10 flex flex-row items-center justify-between backdrop-blur-sm text-background dark:text-foreground">
       <div className="flex flex-row items-center gap-x-10">
         <Brand />
-        <Desktop />
+        <div className="hidden md:block">
+          <Desktop />
+        </div>
       </div>
-      <ThemeSwitcher />
+      <div className="md:hidden">
+        <icons.menu />
+      </div>
+      {/* <div className="hidden md:block">
+        <ThemeSwitcher />
+      </div> */}
     </header>
   )
 }
