@@ -4,7 +4,9 @@ import {
   Facebook,
   Instagram,
   Mail,
-  MenuSquare
+  MenuSquare,
+  XSquare,
+  BookOpen
 } from "lucide-react"
 
 export const icons = {
@@ -13,5 +15,7 @@ export const icons = {
   facebook: Facebook,
   instagram: Instagram,
   email: Mail,
-  menu: MenuSquare
+  menu: MenuSquare,
+  closeMenu: XSquare,
+  bookOpen: BookOpen
 }

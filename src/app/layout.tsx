@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   },
   description: 'MTM - Manguni Teknik Multimedia',
   themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
-    { media: "(prefers-color-scheme: light)", color: "white" }
   ]
 }
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn("--font-jetbrain", jetbrain.variable)}>
-        <ThemeProvider defaultTheme='dark' attribute='class'>
+        <ThemeProvider defaultTheme='light' attribute='class'>
           <div className="flex flex-col min-h-screen relative">
             <Header />
             <div className="flex-1">

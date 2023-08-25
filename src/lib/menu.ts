@@ -1,7 +1,7 @@
 interface IMenu {
   title: string
   link: string
-  desc?: string
+  desc: string
 }
 
 export const menus: Array<IMenu> = [
