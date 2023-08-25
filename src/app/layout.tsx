@@ -28,15 +28,11 @@ export default function RootLayout({
       <body className={cn("--font-jetbrain", jetbrain.variable)}>
         <ThemeProvider defaultTheme='dark' attribute='class'>
           <div className="flex flex-col min-h-screen relative">
-            <div>
-              <Header />
-            </div>
-            <div>
+            <Header />
+            <div className="flex-1">
               {children}
             </div>
-            <div>
-              <Footer />
-            </div>
+            <Footer />
           </div>
         </ThemeProvider>
       </body>

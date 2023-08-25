@@ -10,8 +10,8 @@ export default function ThemeSwitcher() {
 
   return (
     <Button size="icon" variant="ghost" onClick={() => setTheme(theme == "dark" ? "light" : "dark")}>
-      <icons.light className="w-6 h-6 hidden dark:block" />
-      <icons.dark className="w-6 h-6 block dark:hidden" />
+      <icons.light className="w-4 h-4 hidden dark:block" />
+      <icons.dark className="w-4 h-4 block dark:hidden" />
     </Button>
   )
 }

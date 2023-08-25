@@ -1,21 +1,23 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Embed from "@/components/embed"
 
 export default function Hero() {
   return (
-    <div className="w-full h-screen grid place-content-center">
-      <div className="bg-background/80 w-full h-screen absolute" />
-      <video className="absolute w-full h-screen -z-10 top-0 left-0 bg-blend-overlay object-cover bg-center" autoPlay loop muted>
-        <source src="/video/video.mp4" type="video/mp4" />
-      </video>
-      <div className="max-w-lg w-full space-y-4 z-10 text-background dark:text-foreground p-4 text-center">
-        <h1 className="text-3xl font-bold">Manguni Teknik Multimedia</h1>
-        <p className="leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, atque adipisci possimus maxime reprehenderit ad tempora earum saepe reiciendis dolorum.
-        </p>
-        <Link href="/about">
-          <Button className="text-foreground mt-4" variant="secondary">About Us</Button>
-        </Link>
+    <div className="w-full pt-12 md:pt-28 grid place-content-center">
+      <div className="max-w-6xl w-full p-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-10 items-center">
+          <Embed />
+          <div className="space-y-4">
+            <h1 className="text-2xl font-semibold">Manguni Teknik Multimedia</h1>
+            <p className="leading-relaxed">
+              Discover the Art of Capturing Moments with Our Photography and Videography Services. Elevate Your Online Presence with Expert Web Development. Explore Our Portfolio and Unlock Your Vision Today!
+            </p>
+            <Link href="/about">
+              <Button variant="secondary" className="mt-7">Read More</Button>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )

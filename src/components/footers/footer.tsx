@@ -3,7 +3,7 @@ import { menus } from "@/lib/menu"
 
 export default function Footer() {
   return (
-    <footer className="bottom-0 right-0 relative w-full flex flex-col">
+    <footer className="w-full flex flex-col">
       <div className="flex flex-col md:flex-row justify-center items-center md:justify-between bg-foreground text-background w-full px-4 py-3 gap-y-3 md:gap-y-0">
         <p>Get connected with us on social networks</p>
         <div className="flex flex-row items-center gap-x-4">
