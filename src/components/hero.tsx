@@ -1,9 +1,14 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { icons } from "@/components/icons"
-import Link from "next/link"
+import { useRouter } from "next/navigation"
 import Embed from "@/components/embed"
 
 export default function Hero() {
+
+  const { push } = useRouter()
+
   return (
     <div className="w-full md:pt-28 grid place-content-center">
       <div className="max-w-6xl w-full p-6">
@@ -14,13 +19,9 @@ export default function Hero() {
             <p className="leading-relaxed text-muted-foreground">
               Discover the Art of Capturing Moments with Our Photography and Videography Services. Elevate Your Online Presence with Expert Web Development. Explore Our Portfolio and Unlock Your Vision Today!
             </p>
-            <Button variant="secondary">
-              <Link href="/about">
-                <div className="mt-7 flex flex-row items-center gap-x-3">
-                  <icons.bookOpen className="w-4 h-4" />
-                  <span>Read More</span>
-                </div>
-              </Link>
+            <Button variant="secondary" className="mt-7 flex flex-row items-center gap-x-3" onClick={() => push("/about")}>
+              <icons.bookOpen className="w-4 h-4" />
+              <span>Read More</span>
             </Button>
           </div>
         </div>
