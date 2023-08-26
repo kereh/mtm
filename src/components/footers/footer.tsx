@@ -23,16 +23,16 @@ export default function Footer() {
           <h1 className="text-lg underline underline-offset-8">PRODUCTS</h1>
           <ul className="flex flex-col items-center gap-y-1">
             {menus.map((menu) => (
-              <li key={menu.title} className="text-muted-foreground">{menu.title}</li>
+              <li key={menu.title} className="text-muted-foreground cursor-pointer">{menu.title}</li>
             ))}
           </ul>
         </div>
         <div className="text-center space-y-4">
           <h1 className="text-lg underline underline-offset-8">USEFUL LINKS</h1>
           <ul className="flex flex-col items-center gap-y-1 text-muted-foreground">
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Whatsapp</li>
+            <li className="cursor-pointer">Facebook</li>
+            <li className="cursor-pointer">Instagram</li>
+            <li className="cursor-pointer">Whatsapp</li>
           </ul>
         </div>
       </div>

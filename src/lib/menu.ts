@@ -7,17 +7,17 @@ interface IMenu {
 export const menus: Array<IMenu> = [
   {
     title: "Photography",
-    link: "/products",
+    link: "https://www.armandoloho.com",
     desc: "We have professional photographers"
   },
   {
     title: "Videography - Film",
-    link: "/videography-film",
+    link: "https://www.aurorafilm.id",
     desc: "We also do videography and film"
   },
   {
     title: "Web Developer",
-    link: "/web",
+    link: "/",
     desc: "We Also Provide a Profesionals Web Developers"
   }
 ]

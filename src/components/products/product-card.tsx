@@ -1,17 +1,21 @@
 "use client"
 
-import Image from "next/image"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
+import { useRouter } from "next/navigation"
+import Image from "next/image"
 
 interface IProductCard {
   title: string
   img: string
+  link: string
 }
 
-export default function ProductCard({ title, img }: IProductCard) {
+export default function ProductCard({ title, img, link }: IProductCard) {
+
+  const { push } = useRouter()
 
   return (
-    <div className="group relative overflow-hidden rounded-md">
+    <div className="group relative overflow-hidden rounded-md cursor-pointer" onClick={() => push(link)}>
       <AspectRatio ratio={4 / 5}>
         <div className="absolute inset-0 z-10 bg-black/60 transition-colors group-hover:bg-black/70" />
         <Image

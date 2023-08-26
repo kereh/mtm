@@ -6,7 +6,12 @@ import {
   Mail,
   MenuSquare,
   XSquare,
-  BookOpen
+  BookOpen,
+  Home,
+  Camera,
+  Video,
+  Code2,
+  Info
 } from "lucide-react"
 
 export const icons = {
@@ -17,5 +22,10 @@ export const icons = {
   email: Mail,
   menu: MenuSquare,
   closeMenu: XSquare,
-  bookOpen: BookOpen
+  bookOpen: BookOpen,
+  home: Home,
+  video: Video,
+  camera: Camera,
+  code: Code2,
+  info: Info
 }
