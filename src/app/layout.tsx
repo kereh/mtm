@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn("--font-jetbrain", jetbrain.variable)}>
-        <ThemeProvider defaultTheme='light' attribute='class'>
+        <ThemeProvider defaultTheme='dark' attribute='class'>
           <div className="flex flex-col min-h-screen relative">
             <Header />
             <div className="flex-1">
