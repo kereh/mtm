@@ -14,12 +14,12 @@ export default function Hero() {
             <p className="leading-relaxed text-muted-foreground">
               Discover the Art of Capturing Moments with Our Photography and Videography Services. Elevate Your Online Presence with Expert Web Development. Explore Our Portfolio and Unlock Your Vision Today!
             </p>
-            <Link href="/about">
-              <Button variant="secondary" className="mt-7 flex flex-row items-center gap-x-3">
+            <Button variant="secondary" className="mt-7 flex flex-row items-center gap-x-3">
+              <Link href="/about">
                 <icons.bookOpen className="w-4 h-4" />
                 <span>Read More</span>
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </div>
