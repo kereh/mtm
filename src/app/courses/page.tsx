@@ -1,4 +1,17 @@
+import type { Metadata } from 'next'
 import CourseMain from "@/components/courses/course-main"
+
+export const metadata: Metadata = {
+  title: {
+    default: "Course",
+    template: "Manguni Teknik Multimedia - %s"
+  },
+  description: 'Course - Manguni Teknik Multimedia',
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ]
+}
 
 export default function page() {
   return (

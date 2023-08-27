@@ -1,4 +1,17 @@
+import { Metadata } from "next"
 import Image from "next/image"
+
+export const metadata: Metadata = {
+  title: {
+    default: "About Us",
+    template: "Manguni Teknik Multimedia - %s"
+  },
+  description: 'About Us - Manguni Teknik Multimedia',
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ]
+}
 
 export default function page() {
   return (
