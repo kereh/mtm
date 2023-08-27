@@ -21,9 +21,10 @@ export default function ProductCard({ title, img, link }: IProductCard) {
         <Image
           src={img}
           alt={title}
+          quality={75}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          fill
           className="object-cover transition-transform group-hover:scale-105"
+          fill
           priority
         />
       </AspectRatio>

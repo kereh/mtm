@@ -6,7 +6,7 @@ export default function Products() {
     <section id="product" className="w-full flex justify-center">
       <div className="max-w-6xl w-full p-6 flex flex-col justify-center">
         <div className="text-center space-y-3 mb-10">
-          <h1 className="text-lg md:text-2xl lg:text-3xl font-semibold underline underline-offset-8">Products</h1>
+          <h1 className="text-lg md:text-2xl lg:text-3xl font-extrabold underline underline-offset-8">Products</h1>
           <p className="leading-relaxed text-muted-foreground">
             Explore our products
           </p>
