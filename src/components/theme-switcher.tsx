@@ -16,6 +16,7 @@ export default function ThemeSwitcher() {
     >
       <icons.light className="w-4 h-4 hidden dark:block" />
       <icons.dark className="w-4 h-4 block dark:hidden" />
+      <span className="sr-only">Switch Theme</span>
     </Button>
   )
 }
