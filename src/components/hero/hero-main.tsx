@@ -20,7 +20,7 @@ export default function Hero() {
             <div className="flex flex-row md:justify-center items-center gap-4">
               <Button
                 variant="default"
-                onClick={() => push("/about")}
+                onClick={() => push("https://api.whatsapp.com/send/?phone=6281248336870&type=phone_number&app_absent=0/")}
               >
                 <div className="flex flex-row items-center gap-2">
                   <icons.bookOpen className="w-4 h-4" />
