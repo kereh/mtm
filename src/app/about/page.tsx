@@ -8,9 +8,11 @@ export default function page() {
           <Image
             src="/img/about.svg"
             alt="About us MTM"
+            className="relative w-64 h-64 mx-auto border rounded-xl p-4"
             width={100}
             height={100}
-            className="relative w-64 h-64 mx-auto border rounded-xl p-4"
+            quality={75}
+            priority
           />
           <div className="max-w-2xl w-full">
             <div className="mb-5 space-y-3">

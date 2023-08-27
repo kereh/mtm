@@ -9,8 +9,13 @@ export const contactSchema = z.object({
     z.string()
       .email({ message: "Please insert a valid email" }),
   phone:
-    z.number()
-      .max(20, { message: "Max 20 characters" }),
+    z.string()
+      .min(0, {
+        message: "Please, fill this form correctly"
+      })
+      .max(20, {
+        message: "Max numbers 20"
+      }),
   address:
     z.string()
       .max(50, { message: "Max 20 characters" }),

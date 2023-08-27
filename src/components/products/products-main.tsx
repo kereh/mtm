@@ -14,9 +14,9 @@ export default function Products() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-full">
           {productAndMenu.map((product) => (
             <ProductCard
+              key={product.title}
               title={product.title}
               img={product.img}
-              key={product.title}
               link={product.link}
             />
           ))}

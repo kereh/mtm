@@ -11,7 +11,8 @@ import {
   Camera,
   Video,
   Code2,
-  Info
+  Info,
+  GraduationCap,
 } from "lucide-react"
 
 export const icons = {
@@ -27,5 +28,6 @@ export const icons = {
   video: Video,
   camera: Camera,
   code: Code2,
-  info: Info
+  info: Info,
+  course: GraduationCap
 }

@@ -2,13 +2,8 @@
 
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { useRouter } from "next/navigation"
+import { IProductCard } from "@/types/product-types"
 import Image from "next/image"
-
-interface IProductCard {
-  title: string
-  img: string
-  link: string
-}
 
 export default function ProductCard({ title, img, link }: IProductCard) {
 

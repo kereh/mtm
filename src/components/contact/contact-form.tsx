@@ -23,6 +23,9 @@ export default function ContactForm() {
     defaultValues: {
       fullname: "",
       email: "",
+      address: "",
+      message: "",
+      phone: ""
     }
   })
 
