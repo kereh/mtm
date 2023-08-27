@@ -1,6 +1,6 @@
-import Contact from '@/components/contact/contact'
-import Hero from '@/components/hero'
-import Products from '@/components/products/products'
+import Contact from '@/components/contact/contact-main'
+import Hero from '@/components/hero/hero-main'
+import Products from '@/components/products/products-main'
 
 export default function Home() {
   return (

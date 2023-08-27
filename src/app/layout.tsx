@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { jetbrain } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import ThemeProvider from '@/components/theme-provider'
-import Header from '@/components/headers/header'
-import Footer from '@/components/footers/footer'
+import Header from '@/components/headers/header-main'
+import Footer from '@/components/footer/footer-main'
 import '@/styles/globals.css'
 
 export const metadata: Metadata = {

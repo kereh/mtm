@@ -1,4 +1,4 @@
-import { products } from "@/lib/product-items"
+import { productAndMenu } from "@/config/product-and-menu"
 import ProductCard from "@/components/products/product-card"
 
 export default function Products() {
@@ -12,7 +12,7 @@ export default function Products() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-full">
-          {products.map((product) => (
+          {productAndMenu.map((product) => (
             <ProductCard
               title={product.title}
               img={product.img}

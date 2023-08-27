@@ -1,6 +1,6 @@
 "use client"
 
-import { menus } from "@/lib/menu"
+import { productAndMenu } from "@/config/product-and-menu"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -28,17 +28,12 @@ export default function Desktop() {
           <NavigationMenuTrigger>Products</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 md:grid-cols-2 p-4 w-[400px] md:w-[450px] lg:w-[600px]">
-              {menus.map((menu) => (
+              {productAndMenu.map((menu) => (
                 <ListItem key={menu.link} title={menu.title} href={menu.link}>{menu.desc}</ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        {/* <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Courses</NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem> */}
         <NavigationMenuItem>
           <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>About</NavigationMenuLink>

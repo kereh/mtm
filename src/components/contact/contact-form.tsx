@@ -42,7 +42,10 @@ export default function ContactForm() {
               <FormItem>
                 <FormLabel>Fullname</FormLabel>
                 <FormControl>
-                  <Input placeholder="John Doe" {...field} />
+                  <Input
+                    placeholder="John Doe"
+                    {...field}
+                  />
                 </FormControl>
                 {form.formState.errors.fullname
                   ? (
@@ -125,7 +128,7 @@ export default function ContactForm() {
               </FormItem>
             )}
           />
-          <Button type="submit" className="w-2/3 self-center">Submit</Button>
+          <Button type="submit">Submit</Button>
         </div>
       </form>
     </Form>

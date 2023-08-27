@@ -3,9 +3,9 @@
 import { useState } from "react"
 import { icons } from "@/components/icons"
 import ThemeSwitcher from "@/components/theme-switcher"
-import Brand from "@/components/headers/brand"
-import Desktop from "@/components/headers/menu/desktop"
-import Mobile from "@/components/headers/menu/mobile"
+import Desktop from "@/components/headers/nav/desktop"
+import Mobile from "@/components/headers/nav/mobile"
+import Brand from "@/components/headers/nav/brand"
 
 export default function Header() {
 

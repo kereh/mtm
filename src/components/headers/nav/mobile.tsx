@@ -14,6 +14,12 @@ export default function Mobile({ isShow, setIsShow }: IMobileProps) {
   return (
     <Transition
       show={isShow}
+      enter="transition-opacity duration-300"
+      enterFrom="opacity-0"
+      enterTo="opacity-100"
+      leave="transition-opacity duration-300"
+      leaveFrom="opacity-100"
+      leaveTo="opacity-0"
       className="fixed top-0 left-0 w-full h-screen bg-background/70 backdrop-blur-sm"
     >
       <div className="w-3/4 border-r h-screen bg-background p-8">
@@ -50,12 +56,6 @@ export default function Mobile({ isShow, setIsShow }: IMobileProps) {
               Web Developer
             </li>
           </Link>
-          {/* <Link href="/">
-            <li className="flex flex-row items-center gap-4">
-              <icons.bookOpen />
-              Course
-            </li>
-          </Link> */}
           <Link href="/about">
             <li className="flex flex-row items-center gap-4">
               <icons.info />
