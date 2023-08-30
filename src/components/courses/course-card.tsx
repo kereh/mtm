@@ -1,7 +1,6 @@
-// "use client"
-
-import { Course } from "@/types/course-types"
+import { ICourse } from "@/types"
 import { currencyFormat } from "@/lib/currency"
+import CourseSheet from "@/components/courses/course-sheet"
 import {
   Card,
   CardContent,
@@ -10,11 +9,20 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import CourseSheet from "@/components/courses/course-sheet"
 
-export default function CourseCard({ name, description, amount, per, benefits }: Course) {
-  // indonesia format (IDR)
-  const formattedAmount = currencyFormat({ amount: amount, code: "IDR" })
+export default function CourseCard({
+  name,
+  description,
+  amount,
+  per,
+  benefits
+}: ICourse) {
+
+  const formattedAmount = currencyFormat({
+    amount: amount,
+    code: "IDR"
+  })
+
   return (
     <Card>
       <CardHeader>

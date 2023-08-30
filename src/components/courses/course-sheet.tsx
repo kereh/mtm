@@ -1,7 +1,7 @@
 "use client"
 
 import { z } from "zod"
-import { CourseSheet } from "@/types/course-sheet-types"
+import { ICourseSheet } from "@/types"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { courseSchema } from "@/schema/course-schema"
@@ -26,9 +26,7 @@ import {
   FormItem,
 } from "@/components/ui/form"
 
-// https://api.whatsapp.com/send/?phone=89612225233&text=Hello%5Cnakwoakwoa&type=phone_number&app_absent=0
-
-export default function CourseSheet({ name, per, formattedAmount }: CourseSheet) {
+export default function CourseSheet({ name, per, formattedAmount }: ICourseSheet) {
 
   const { push } = useRouter()
 
