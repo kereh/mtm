@@ -39,12 +39,13 @@ export const metadata: Metadata = {
     title: "Manguni Teknik Multimedia",
     description: "kami adalah tim kreatif yang berdedikasi tinggi dalam menghadirkan visual dan pengalaman digital yang luar biasa. Sebagai perusahaan yang berfokus pada videography, fotografi, dan pengembangan web, kami menggabungkan keahlian teknis dengan imajinasi artistik untuk menciptakan konten yang menarik dan solusi digital yang inovatif.",
     siteName: "MTM",
+    images: [`/img/og/mtm.png`],
   },
   twitter: {
     card: "summary_large_image",
     title: "Manguni Teknik Multimedia",
     description: "kami adalah tim kreatif yang berdedikasi tinggi dalam menghadirkan visual dan pengalaman digital yang luar biasa. Sebagai perusahaan yang berfokus pada videography, fotografi, dan pengembangan web, kami menggabungkan keahlian teknis dengan imajinasi artistik untuk menciptakan konten yang menarik dan solusi digital yang inovatif.",
-    images: [`https://mtm-kereh.vercel.app/og.jpg`],
+    images: [`/img/og/mtm.png`],
   },
   icons: {
     icon: "/favicon.ico",
