@@ -1,6 +1,6 @@
-import { Props } from "@/types/currency-types"
+import { ICurrency } from "@/types"
 
-export function currencyFormat({ amount, code }: Props) {
+export function currencyFormat({ amount, code }: ICurrency) {
 
   const formattedAmount = new Intl.NumberFormat('en-US', {
     style: "currency",
