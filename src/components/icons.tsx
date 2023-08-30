@@ -13,6 +13,7 @@ import {
   Code2,
   Info,
   GraduationCap,
+  Laugh,
 } from "lucide-react"
 
 export const icons = {
@@ -29,5 +30,6 @@ export const icons = {
   camera: Camera,
   code: Code2,
   info: Info,
-  course: GraduationCap
+  course: GraduationCap,
+  laugh: Laugh
 }

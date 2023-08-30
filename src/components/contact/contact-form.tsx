@@ -47,6 +47,7 @@ export default function ContactForm() {
                 <FormControl>
                   <Input
                     placeholder="John Doe"
+                    autoComplete="off"
                     {...field}
                   />
                 </FormControl>
@@ -71,7 +72,11 @@ export default function ContactForm() {
               <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input placeholder="johndoe@example.com" {...field} />
+                  <Input
+                    placeholder="johndoe@example.com"
+                    autoComplete="off"
+                    {...field}
+                  />
                 </FormControl>
                 {form.formState.errors.email
                   ? (
@@ -94,7 +99,10 @@ export default function ContactForm() {
               <FormItem>
                 <FormLabel>Phone Number</FormLabel>
                 <FormControl>
-                  <Input {...field} />
+                  <Input
+                    autoComplete="off"
+                    {...field}
+                  />
                 </FormControl>
                 <FormDescription>
                   {"+62"} is Indonesia phone code, use yours
@@ -109,7 +117,10 @@ export default function ContactForm() {
               <FormItem>
                 <FormLabel>Your Address</FormLabel>
                 <FormControl>
-                  <Input {...field} />
+                  <Input
+                    autoComplete="off"
+                    {...field}
+                  />
                 </FormControl>
                 <FormDescription>
                   Use a complete and valid address
@@ -126,7 +137,11 @@ export default function ContactForm() {
               <FormItem>
                 <FormLabel>Message</FormLabel>
                 <FormControl>
-                  <Textarea placeholder="Enter your message here" {...field} />
+                  <Textarea
+                    placeholder="Enter your message here"
+                    autoComplete="off"
+                    {...field}
+                  />
                 </FormControl>
               </FormItem>
             )}

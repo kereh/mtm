@@ -34,3 +34,10 @@ export interface IProductCard {
   img: string
   link: string
 }
+
+export interface IMenu {
+  title: string
+  link: string
+  desc: string
+  img: string
+}

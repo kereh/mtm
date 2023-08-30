@@ -1,6 +1,6 @@
-import { Course } from "@/types/course-types"
+import { ICourse } from "@/types"
 
-export const courses: Array<Course> = [
+export const courses: Array<ICourse> = [
   {
     name: "Computer Courses",
     description: "Computer Courses for Beginners",

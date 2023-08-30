@@ -1,14 +1,9 @@
-interface IMenu {
-  title: string
-  link: string
-  desc: string
-  img: string
-}
+import { IMenu } from "@/types"
 
 export const productAndMenu: Array<IMenu> = [
   {
     title: "Photography",
-    link: "https://www.armandoloho.com",
+    link: "/photography",
     desc: "We have professional photographers",
     img: "/img/photography.jpg",
   },
