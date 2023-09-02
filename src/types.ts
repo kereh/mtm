@@ -41,3 +41,17 @@ export interface IMenu {
   desc: string
   img: string
 }
+
+export interface ISite {
+  title: string
+  description: string
+  keywords: Array<string>
+  site: string
+  authors: Array<{
+    name: string
+    url: string
+  }>
+  type: string
+  locale: string
+  images: Array<string>
+}

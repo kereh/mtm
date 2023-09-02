@@ -1,4 +1,4 @@
-import { courses } from "@/config/course-list"
+import { courses } from "@/config/site"
 import CourseCard from "@/components/courses/course-card"
 
 export default function CourseMain() {

@@ -1,51 +1,39 @@
 import type { Metadata } from 'next'
 import { jetbrain } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
+import { site } from '@/config/site'
 import ThemeProvider from '@/components/theme-provider'
 import Header from '@/components/headers/header-main'
 import Footer from '@/components/footer/footer-main'
 import '@/styles/globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mtm-kereh.vercel.app/"),
+  metadataBase: new URL(site.site),
   title: {
-    default: "Manguni Teknik Multimedia",
-    template: `%s - Manguni Teknik Multimedia`,
+    default: site.title,
+    template: `${site.title} - %s`,
   },
-  description: "kami adalah tim kreatif yang berdedikasi tinggi dalam menghadirkan visual dan pengalaman digital yang luar biasa. Sebagai perusahaan yang berfokus pada videography, fotografi, dan pengembangan web, kami menggabungkan keahlian teknis dengan imajinasi artistik untuk menciptakan konten yang menarik dan solusi digital yang inovatif.",
-  keywords: [
-    "Photography",
-    "Videography",
-    "Web Developer",
-    "Manguni",
-    "Multimedia",
-    "Web Developer",
-  ],
-  authors: [
-    {
-      name: "kereh",
-      url: "https://github.com/kereh",
-    },
-  ],
-  creator: "kereh",
+  description: site.description,
+  keywords: site.keywords,
+  authors: site.authors,
+  creator: site.authors[0].name,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://mtm-kereh.vercel.app/",
-    title: "Manguni Teknik Multimedia",
-    description: "kami adalah tim kreatif yang berdedikasi tinggi dalam menghadirkan visual dan pengalaman digital yang luar biasa. Sebagai perusahaan yang berfokus pada videography, fotografi, dan pengembangan web, kami menggabungkan keahlian teknis dengan imajinasi artistik untuk menciptakan konten yang menarik dan solusi digital yang inovatif.",
-    siteName: "MTM",
-    images: [`/img/og/mtm.png`],
+    locale: site.locale,
+    url: site.site,
+    title: site.title,
+    description: site.description,
+    images: site.images,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Manguni Teknik Multimedia",
-    description: "kami adalah tim kreatif yang berdedikasi tinggi dalam menghadirkan visual dan pengalaman digital yang luar biasa. Sebagai perusahaan yang berfokus pada videography, fotografi, dan pengembangan web, kami menggabungkan keahlian teknis dengan imajinasi artistik untuk menciptakan konten yang menarik dan solusi digital yang inovatif.",
-    images: [`/img/og/mtm.png`],
+    title: site.title,
+    description: site.description,
+    images: site.images,
   },
   icons: {
     icon: "/favicon.ico",

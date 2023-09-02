@@ -1,6 +1,8 @@
 "use client"
 
-import { productAndMenu } from "@/config/product-and-menu"
+import { productAndMenu } from "@/config/site"
+import { ListItem } from "@/components/ui/list-item"
+import Link from "next/link"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,8 +12,6 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import Link from "next/link"
-import { ListItem } from "@/components/ui/list-item"
 
 export default function Desktop() {
   return (

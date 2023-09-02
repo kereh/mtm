@@ -1,5 +1,5 @@
 import { icons } from "@/components/icons"
-import { productAndMenu } from "@/config/product-and-menu"
+import { productAndMenu } from "@/config/site"
 import { currentYear } from "@/lib/year"
 
 export default function Footer() {

@@ -5,6 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: "/private",
     },
+    sitemap: 'https://mtm-kereh.vercel.app/sitemap.xml'
   }
 }

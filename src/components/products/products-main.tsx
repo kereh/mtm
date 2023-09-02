@@ -1,4 +1,4 @@
-import { productAndMenu } from "@/config/product-and-menu"
+import { productAndMenu } from "@/config/site"
 import ProductCard from "@/components/products/product-card"
 
 export default function Products() {
