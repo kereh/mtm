@@ -13,7 +13,7 @@ export default function GalleryImage({ url, urlto }: IGalleryImages) {
           width={550}
           height={550}
           priority
-          className="object-cover transition-transform group-hover:scale-105"
+          className="object-cover aspect-auto transition-transform group-hover:scale-105"
         />
       </Link>
     </div>
