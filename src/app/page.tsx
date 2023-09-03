@@ -1,15 +1,19 @@
-import Contact from '@/components/contact/contact-main'
-import Gallery from '@/components/gallery/gallery-main'
+"use client"
+
+import dynamic from "next/dynamic"
 import Hero from '@/components/hero/hero-main'
-import Products from '@/components/products/products-main'
+
+const ContactDynamic = dynamic(() => import("@/components/contact/contact-main"))
+const GalleryDynamic = dynamic(() => import("@/components/gallery/gallery-main"))
+const ProductsDynamic = dynamic(() => import("@/components/products/products-main"))
 
 export default function Home() {
   return (
     <div className='w-full h-full'>
       <Hero />
-      <Products />
-      <Gallery />
-      <Contact />
+      <ProductsDynamic />
+      <GalleryDynamic />
+      <ContactDynamic />
     </div>
   )
 }
