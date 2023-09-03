@@ -10,10 +10,10 @@ export default function GalleryImage({ url, urlto }: IGalleryImages) {
         <Image
           src={url}
           alt={urlto}
-          width={550}
-          height={550}
+          width={250}
+          height={250}
           priority
-          className="object-cover aspect-auto transition-transform group-hover:scale-105"
+          className="mx-auto w-full object-cover aspect-auto transition-transform group-hover:scale-105"
         />
       </Link>
     </div>
