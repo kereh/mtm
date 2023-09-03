@@ -11,7 +11,7 @@ export default function Products() {
             Explore our products
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
           {productAndMenu.map((product) => (
             <ProductCard
               key={product.title}

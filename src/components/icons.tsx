@@ -14,6 +14,7 @@ import {
   Info,
   GraduationCap,
   Laugh,
+  Grid
 } from "lucide-react"
 
 export const icons = {
@@ -31,5 +32,6 @@ export const icons = {
   code: Code2,
   info: Info,
   course: GraduationCap,
-  laugh: Laugh
+  laugh: Laugh,
+  gallery: Grid
 }

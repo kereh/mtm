@@ -56,6 +56,12 @@ export default function Mobile({ isShow, setIsShow }: IMobileProps) {
               Web Developer
             </li>
           </Link>
+          <Link href="/#gallery">
+            <li className="flex flex-row items-center gap-4">
+              <icons.gallery />
+              Gallery
+            </li>
+          </Link>
           <Link href="/courses">
             <li className="flex flex-row items-center gap-4">
               <icons.course />

@@ -35,6 +35,11 @@ export default function Desktop() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
+          <Link href="/#gallery" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Gallery</NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href="/courses" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>Courses</NavigationMenuLink>
           </Link>
