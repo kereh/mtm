@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function GalleryImage({ url, urlto }: IGalleryImages) {
   return (
     <Link href={urlto}>
-      <div className="group relative overflow-hidden rounded-md cursor-pointer">
+      <div className="group relative overflow-hidden rounded-lg cursor-pointer">
         <div className="absolute inset-0 z-10 md:bg-black/60 transition-colors group-hover:bg-transparent" />
         <Image
           src={url}
