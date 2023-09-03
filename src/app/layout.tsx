@@ -14,8 +14,15 @@ export const metadata: Metadata = {
     template: `${site.title} - %s`,
   },
   description: site.description,
-  keywords: site.keywords,
-  authors: site.authors,
+  keywords: site.keywords.map((keyword) => {
+    return keyword
+  }),
+  authors: site.authors.map((author) => {
+    return {
+      name: author.name,
+      url: author.url
+    }
+  }),
   creator: site.authors[0].name,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
@@ -27,13 +34,17 @@ export const metadata: Metadata = {
     url: site.site,
     title: site.title,
     description: site.description,
-    images: site.images,
+    images: site.images.map((img) => {
+      return img
+    }),
   },
   twitter: {
     card: "summary_large_image",
     title: site.title,
     description: site.description,
-    images: site.images,
+    images: site.images.map((img) => {
+      return img
+    }),
   },
   icons: {
     icon: "/favicon.ico",
