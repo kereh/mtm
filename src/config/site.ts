@@ -63,7 +63,7 @@ export const site: ISite = {
     { name: "Ronaldo Kereh", url: "https://www.github.com/kereh" },
     { name: "Armando Loho", url: "https://www.instagram.com/armandoloho" }
   ],
-  images: ["/mtm.png"],
+  images: ["/img/og/mtm.png"],
   locale: "id_ID",
   type: "website"
 }
