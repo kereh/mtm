@@ -4,15 +4,7 @@ import { currentYear } from "@/lib/year"
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col">
-      <div className="flex flex-col md:flex-row justify-center items-center md:justify-between bg-foreground text-background w-full px-4 py-3 gap-y-3 md:gap-y-0">
-        <p>Get connected with us on social networks</p>
-        <div className="flex flex-row items-center gap-x-4">
-          <icons.facebook />
-          <icons.instagram />
-          <icons.email />
-        </div>
-      </div>
+    <footer className="w-full flex flex-col border-t">
       <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-x-4 gap-y-8 md:gap-4 py-3 px-4 mt-5 text-foreground">
         <h1 className="text-3xl place-self-center text-center font-extrabold">
           MTM <span className="block text-base font-normal">Manguni Teknik Multimedia</span>

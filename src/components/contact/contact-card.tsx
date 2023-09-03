@@ -9,15 +9,14 @@ import ContactForm from "@/components/contact/contact-form"
 
 export default function ContactCard() {
   return (
-    <Card className="border-0">
-      <CardHeader className="text-center">
-        <CardTitle className="font-extrabold">Contact Us</CardTitle>
+    <Card className="space-y-4">
+      <CardHeader>
+        <CardTitle className="font-semibold">Contact Form</CardTitle>
         <CardDescription className="text-base text-muted-foreground">Feel free to contact us</CardDescription>
       </CardHeader>
       <CardContent>
         <ContactForm />
       </CardContent>
     </Card>
-
   )
 }

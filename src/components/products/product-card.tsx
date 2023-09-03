@@ -11,7 +11,7 @@ export default function ProductCard({ title, img, link }: IProductCard) {
 
   return (
     <div className="group relative overflow-hidden rounded-md cursor-pointer" onClick={() => push(link)}>
-      <AspectRatio ratio={4 / 5}>
+      <AspectRatio ratio={1 / 1}>
         <div className="absolute inset-0 z-10 bg-black/60 transition-colors group-hover:bg-black/70" />
         <Image
           src={img}

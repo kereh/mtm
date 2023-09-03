@@ -59,7 +59,7 @@ export default function ContactForm() {
                   )
                   : (
                     <FormDescription>
-                      Enter your fullname here
+                      Insert your fullname here.
                     </FormDescription>
                   )}
               </FormItem>
@@ -86,7 +86,7 @@ export default function ContactForm() {
                   )
                   : (
                     <FormDescription>
-                      insert your valid and active email here
+                      Insert valid and active email.
                     </FormDescription>
                   )}
               </FormItem>
@@ -101,11 +101,12 @@ export default function ContactForm() {
                 <FormControl>
                   <Input
                     autoComplete="off"
+                    placeholder="example: +6289623455677"
                     {...field}
                   />
                 </FormControl>
                 <FormDescription>
-                  {"+62"} is Indonesia phone code, use yours
+                  Insert phone number.
                 </FormDescription>
               </FormItem>
             )}

@@ -55,3 +55,15 @@ export interface ISite {
   locale: string
   images: Array<string>
 }
+
+export interface IGalleryImagesList {
+  images: Array<{
+    url: string
+    urlto: string
+  }>
+}
+
+export interface IGalleryImages {
+  url: string
+  urlto: string
+}
