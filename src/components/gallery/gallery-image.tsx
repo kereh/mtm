@@ -8,12 +8,13 @@ export default function GalleryImage({ url, urlto }: IGalleryImages) {
       <Link href={urlto}>
         <div className="absolute inset-0 z-10 lg:bg-black/60 transition-colors group-hover:bg-transparent rounded-lg" />
         <Image
+          className="mx-auto w-full object-cover aspect-auto transition-transform group-hover:scale-105"
           src={url}
           alt={urlto}
-          width={250}
-          height={250}
+          width={350}
+          height={350}
+          quality={100}
           priority
-          className="mx-auto w-full object-cover aspect-auto transition-transform group-hover:scale-105"
         />
       </Link>
     </div>
