@@ -13,7 +13,6 @@ export default function GalleryImage({ url, urlto }: IGalleryImages) {
           alt={urlto}
           width={350}
           height={350}
-          quality={100}
           priority
         />
       </Link>
