@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="max-w-2xl w-full p-6">
         <div className="grid grid-cols-1 justify-center items-center">
           <div className="space-y-8 md:space-y-4 md:text-center">
-            <h1 className="font-extrabold text-3xl md:text-4xl">Manguni Teknik Multimedia</h1>
+            <h1 className="font-semibold text-3xl md:text-4xl">Manguni Teknik Multimedia</h1>
             <p className="md:leading-relaxed text-muted-foreground">
               Discover the Art of Capturing Moments with Our Photography and Videography Services. Elevate Your Online Presence with Expert Web Development. Explore Our Portfolio and Unlock Your Vision Today!
             </p>

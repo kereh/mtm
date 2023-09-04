@@ -3,9 +3,9 @@
 import dynamic from "next/dynamic"
 import Hero from '@/components/hero/hero-main'
 
-const ContactDynamic = dynamic(() => import("@/components/contact/contact-main"))
-const GalleryDynamic = dynamic(() => import("@/components/gallery/gallery-main"))
-const ProductsDynamic = dynamic(() => import("@/components/products/products-main"))
+const ContactDynamic = dynamic(() => import("@/components/contact/contact-main"), { ssr: true })
+const GalleryDynamic = dynamic(() => import("@/components/gallery/gallery-main"), { ssr: true })
+const ProductsDynamic = dynamic(() => import("@/components/products/products-main"), { ssr: true })
 
 export default function Home() {
   return (
