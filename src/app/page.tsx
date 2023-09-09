@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <div className='w-full h-full'>
       <Hero />
-      <ProductsDynamic />
+      {/* <ProductsDynamic /> */}
       <GalleryDynamic />
-      <ContactDynamic />
+      {/* <ContactDynamic /> */}
     </div>
   )
 }
