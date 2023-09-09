@@ -11,8 +11,8 @@ export default function GalleryImage({ url, urlto, sizes }: IGalleryImages) {
           className="mx-auto w-full h-auto object-cover aspect-auto transition-transform group-hover:scale-105"
           src={url}
           alt={urlto}
-          width={350}
-          height={350}
+          width={500}
+          height={500}
           sizes={sizes}
           priority
         />
