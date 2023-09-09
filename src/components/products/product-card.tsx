@@ -19,7 +19,7 @@ export default function ProductCard({ title, img, link }: IProductCard) {
           sizes="(min-width: 1220px) 357px, (min-width: 780px) 29.52vw, calc(100vw - 48px)"
           className="object-cover transition-transform group-hover:scale-105"
           fill
-          priority
+          loading="eager"
         />
       </AspectRatio>
       <div className="absolute inset-0 z-10 flex items-center justify-center">
