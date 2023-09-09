@@ -14,7 +14,8 @@ export default function GalleryImage({ url, urlto, sizes }: IGalleryImages) {
           sizes={sizes}
           width={0}
           height={0}
-          priority
+          // priority
+          loading="eager"
         />
       </Link>
     </div>
