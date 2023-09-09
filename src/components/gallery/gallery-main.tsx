@@ -15,6 +15,7 @@ export default function Gallery() {
               <GalleryImage
                 url={img.url}
                 urlto={img.urlto}
+                sizes={img.sizes}
               />
             </div>
           ))}

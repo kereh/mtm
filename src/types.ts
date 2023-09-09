@@ -60,10 +60,12 @@ export interface IGalleryImagesList {
   images: Array<{
     url: string
     urlto: string
+    sizes: string
   }>
 }
 
 export interface IGalleryImages {
   url: string
   urlto: string
+  sizes: string
 }

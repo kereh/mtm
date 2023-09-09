@@ -16,8 +16,7 @@ export default function ProductCard({ title, img, link }: IProductCard) {
         <Image
           src={img}
           alt={title}
-          quality={75}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(min-width: 1220px) 357px, (min-width: 780px) 29.52vw, calc(100vw - 48px)"
           className="object-cover transition-transform group-hover:scale-105"
           fill
           priority

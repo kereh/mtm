@@ -71,43 +71,53 @@ export const galleryImagesList: IGalleryImagesList = {
   images: [
     {
       url: "/img/gallery/01.jpg",
-      urlto: "https://www.instagram.com/p/CH9rjFVAnwq/"
+      urlto: "https://www.instagram.com/p/CH9rjFVAnwq/",
+      sizes: "(min-width: 1280px) 357px, (min-width: 1040px) calc(16.82vw + 145px), (min-width: 780px) calc(50vw - 32px), calc(100vw - 48px)",
     },
     {
       url: "/img/gallery/02.jpg",
-      urlto: "https://www.instagram.com/p/CF4eufRgSOW/"
+      urlto: "https://www.instagram.com/p/CF4eufRgSOW/",
+      sizes: "(min-width: 1280px) 357px, (min-width: 1040px) calc(16.82vw + 145px), (min-width: 780px) calc(50vw - 32px), calc(100vw - 48px)",
     },
     {
       url: "/img/gallery/03.jpg",
-      urlto: "https://www.instagram.com/p/CYdu7rolEGx/"
+      urlto: "https://www.instagram.com/p/CYdu7rolEGx/",
+      sizes: "(min-width: 1280px) 357px, (min-width: 1040px) calc(16.82vw + 145px), (min-width: 780px) calc(50vw - 32px), calc(100vw - 48px)",
     },
     {
       url: "/img/gallery/04.jpg",
-      urlto: "https://www.instagram.com/p/CJpvo-QA16B/"
+      urlto: "https://www.instagram.com/p/CJpvo-QA16B/",
+      sizes: "(min-width: 1280px) 357px, (min-width: 1040px) calc(16.82vw + 145px), (min-width: 780px) calc(50vw - 32px), calc(100vw - 48px)",
     },
     {
       url: "/img/gallery/05.jpg",
-      urlto: "https://www.instagram.com/p/B9-fyK3AGoW/"
+      urlto: "https://www.instagram.com/p/B9-fyK3AGoW/",
+      sizes: "(min-width: 1280px) 357px, (min-width: 1040px) calc(16.82vw + 145px), (min-width: 780px) calc(50vw - 32px), calc(100vw - 48px)",
     },
     {
       url: "/img/gallery/06.jpg",
-      urlto: "https://www.instagram.com/p/B9oUm-UAYaC/"
+      urlto: "https://www.instagram.com/p/B9oUm-UAYaC/",
+      sizes: "(min-width: 1280px) 357px, (min-width: 1040px) calc(16.82vw + 145px), (min-width: 780px) calc(50vw - 32px), calc(100vw - 48px)",
     },
     {
       url: "/img/gallery/07.jpg",
-      urlto: "https://www.instagram.com/p/BtFpBXHA3ws/"
+      urlto: "https://www.instagram.com/p/BtFpBXHA3ws/",
+      sizes: "(min-width: 1280px) 357px, (min-width: 1040px) calc(16.82vw + 145px), (min-width: 780px) calc(50vw - 32px), calc(100vw - 48px)",
     },
     {
       url: "/img/gallery/08.jpg",
-      urlto: "https://www.instagram.com/p/By64lqmgzen/"
+      urlto: "https://www.instagram.com/p/By64lqmgzen/",
+      sizes: "(min-width: 1280px) 357px, (min-width: 1040px) calc(16.82vw + 145px), (min-width: 780px) calc(50vw - 32px), calc(100vw - 48px)",
     },
     {
       url: "/img/gallery/09.jpg",
-      urlto: "https://www.instagram.com/p/BhEU2IdBLXW/"
+      urlto: "https://www.instagram.com/p/BhEU2IdBLXW/",
+      sizes: "(min-width: 1280px) 357px, (min-width: 1040px) calc(16.82vw + 145px), (min-width: 780px) calc(50vw - 32px), calc(100vw - 48px)",
     },
     {
       url: "/img/gallery/10.jpg",
-      urlto: "https://www.instagram.com/p/BXxAujYhIC3/"
+      urlto: "https://www.instagram.com/p/BXxAujYhIC3/",
+      sizes: "(min-width: 1280px) 357px, (min-width: 1040px) calc(16.82vw + 145px), (min-width: 780px) calc(50vw - 32px), calc(100vw - 48px)",
     },
   ]
 }
