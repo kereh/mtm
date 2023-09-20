@@ -9,9 +9,9 @@ export default function Gallery() {
           <h1 className="text-lg md:text-2xl lg:text-5xl font-semibold">Gallery</h1>
           <p className="text-muted-foreground">The picture taken is a picture of the portrait we did</p>
         </div>
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {galleryImagesList.images.map((img, index) => (
-            <div className="break-inside-avoid" key={index}>
+            <div key={index}>
               <GalleryImage
                 url={img.url}
                 urlto={img.urlto}

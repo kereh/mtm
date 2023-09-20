@@ -12,8 +12,9 @@ export default function GalleryImage({ url, urlto, sizes }: IGalleryImages) {
           src={url}
           alt={urlto}
           sizes={sizes}
-          width={0}
-          height={0}
+          width={500}
+          height={500}
+          quality={100}
           loading="eager"
         />
       </Link>
